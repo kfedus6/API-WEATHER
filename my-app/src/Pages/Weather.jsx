@@ -4,7 +4,6 @@ import SearchCityInput from '../Components/UI/SearchCityInput/SearchCityInput';
 
 function Weather() {
    const [weathers, setWeathers] = useState([]);
-   console.log(weathers);
 
    useEffect(() => {
       loadWeather();
@@ -24,7 +23,7 @@ function Weather() {
                   <h3>{weathers.name}</h3>
                </div>
                <div className='temp'>
-                  <p>{Math.round(weathers.main.temp - 273)}&deg;</p>
+                  <p>&deg;</p>
                </div>
             </div>
          </div>

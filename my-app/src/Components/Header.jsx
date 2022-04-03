@@ -10,7 +10,7 @@ function Header() {
          </div>
          <div className='header__menu'>
             <NavLink to='/'>Інформація</NavLink>
-            <NavLink to='/weatherCity'>Погода</NavLink>
+            <NavLink to='/weather'>Погода</NavLink>
             <NavLink to='/reviews'>Отзывы</NavLink>
          </div >
       </div>
