@@ -60,9 +60,30 @@ justify-content: center;
 margin-top: 50px;
 }
 
-.block__weather{
-   width: 200px;
-   height: 250px;
+.block__weather {
+   width: 350px;
+   height: 200px;
    border: 2px solid blue;
-   border-radius: 5px;  
+   border-radius: 5px;
+}
+
+.city {
+   display: flex;
+   justify-content: center;
+}
+
+.temp {
+   display: flex;
+   justify-content: space-around;
+}
+
+.weather {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+.wind {
+   display: flex; 
+   justify-content: center;
+   margin-top: 20px;
 }
