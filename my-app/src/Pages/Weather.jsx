@@ -5,13 +5,11 @@ import WeatherList from '../Components/WeatherList';
 
 function Weather() {
    const [weather, setWeather] = useState([]);
-   const [city, setCity] = useState('');
-
-   console.log(city);
+   const [city, setCity] = useState('Kyiv');
 
    useEffect(() => {
       loadWeather();
-   }, [])
+   }, [city])
 
    const loadWeather = async () => {
       const data = await PostService.getWeatherCity(city);

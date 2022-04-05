@@ -7,6 +7,10 @@ class PostService {
       const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`);
       return response.data;
    }
+   static async getComments() {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/comments');
+      return response.data
+   }
 }
 
 export default PostService;

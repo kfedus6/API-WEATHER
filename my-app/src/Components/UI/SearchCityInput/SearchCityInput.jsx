@@ -2,7 +2,7 @@ import React from 'react';
 import cl from '../SearchCityInput/SearchCityInput.module.css';
 
 function SearchCityInput({ setCity }) {
-   let location = '';
+   let location;
 
    const sendLocation = () => {
       setCity(location);
@@ -10,8 +10,8 @@ function SearchCityInput({ setCity }) {
 
    return (
       <>
-         <div className={cl.search__input} onChange={(e) => location = e.target.value}>
-            <input type="text" placeholder='Город' />
+         <div className={cl.search__input} >
+            <input type="text" placeholder='Город' value={location} onChange={(e) => location = e.target.value} />
             <button onClick={sendLocation}>Шукати</button>
          </div>
       </>
